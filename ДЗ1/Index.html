@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЗ№1</title>
+</head>
+<body>
+    <script>
+    //*******Задача 1*********
+    /*
+var n = +prompt('Введите число:');
+if(n%2==0&&n>=1&&n<=10 )
+{
+    alert(`TRUE`);
+}
+else
+{
+    alert(`FALSE`);
+}
+
+
+  //*******Задача 2**********
+  var n1 = +prompt('Введите начало диапазона:');
+  var n2 = +prompt('Введите конец диапазона:');
+  
+  if (n1===n1 && n2===n2 && n1 <= n2) 
+  {
+  console.log(`Числа в диапазоне от ${n1} до ${n2}:`);
+  for (let i = n1; i <= n2; i++) {
+    console.log(i);
+  }
+
+  console.log(`\nСтепени двойки в диапазоне от ${n1} до ${n2}:`);
+  for (let i = n1; i <= n2; i++) {
+    if ((i !== 0) && ((i & (i - 1)) === 0)) {
+      console.log(i);
+    }
+  }
+} else 
+{
+  alert("Пожалуйста, введите корректные числа для начала и конца диапазона.");
+}
+
+
+//*******Задача 3 **********
+var tmp=0;
+do {
+   
+    var num = +prompt ('Введите число:');
+    tmp = tmp+num;
+}while(confirm('Вы хотите ввести еще одно число?'));
+alert(`Сумма введенных чисел = ${tmp}`)
+
+
+//*******Задача 4 **********
+let userStr = prompt("Введите строку:");
+let modifiedStr = '';
+if (userStr) {
+  let hasSpaceOrOne = false;
+
+  for (let i = 0; i < userStr.length; i++) {
+    if (userStr[i] !== ' ' && userStr[i] !== '1') {
+      modifiedStr += userStr[i];
+    } else {
+      hasSpaceOrOne = true;
+    }
+  }
+
+  if (hasSpaceOrOne) {
+    if (modifiedStr.length > 0) {
+      alert(`Измененная строка без пробелов и цифры 1: ${modifiedStr}`);
+    } else {
+      alert("В строке нет символов кроме пробелов и цифры 1.");
+    }
+  } else {
+    alert("В строке отсутствуют пробелы или цифра 1.");
+  }
+} else {
+  alert("Введена пустая строка.");
+}
+*/
+//*******Задача 5 **********
+let count = 0;
+let resultString = "Случайные числа, не делящиеся на 3 без остатка:\n";
+
+while (count < 10) {
+  let randomNumber = Math.floor(Math.random() * 20) + 1;
+
+  if (randomNumber % 3 !== 0) {
+    resultString += randomNumber + "\n";
+    count++;
+  }
+}
+
+console.log(resultString);
+
+
+
+
+
+ 
+
+ 
+
+   
+    </script>
+</body>
+</html>
